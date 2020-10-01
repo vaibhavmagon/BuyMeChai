@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OneSchool &mdash; Website by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto"><a href="index.html">Get Me Chai</a></div>
+
+          <div style="text-align:right!important;">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#contact-section" class="nav-link">Create your badge!</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="intro-section" id="home-section">
+
+      <div class="slide-1" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center" style="text-align: center;">
+            <div class="col-12">
+              <div class="row align-items-center">
+                <div class="col-lg-12 mb-6">
+                  <h1  data-aos="fade-up" data-aos-delay="100">Indian Dev's, Open Source & Get Paid!</h1>
+                  <p class="mb-4">Just by adding this cool badge (Get my chai) to your website — you can accept support, and eventually build a direct relationship with your backers.</p>
+                  <p class="mb-2"><u>Though, we currently support only UPI and works only on mobile</u> 🚀 </p>
+                  <br/>
+                  <div>
+                    <a href="upi://pay?pa=vaibhav210991@okaxis&pn=Vaibhav&am=10&mode=00&orgid=000000" target="_blank"><img src="https://i.ibb.co/CWHZfkh/by.png" alt="buymechai" border="0"></a>
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            
+            <h2 class="section-title mb-3">Create your badge!</h2>
+            <p class="mb-5">Get your personalized <b>Get me chai</b> badge (enabled with your UPI) to get instant tip for projects that you code with your bare hands! ⚡</p>
+
+            <div class="form-group row">
+              <div class="col-md-6 mb-3 mb-lg-0">
+                <input type="text" class="form-control" id="fname" placeholder="Enter Name">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control" id="famount" placeholder="Enter Amount (Rs.)">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" id="fupi" placeholder="Enter UPI Id (For ex. vaibhav210991@okaxis.com)">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6">
+                <button onclick="getURL()" class="btn btn-primary py-3 px-5 btn-pill">Create</button>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea id="fullCode" class="form-control" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6">
+                <button onclick="copyCode()" class="btn btn-primary py-3 px-5 btn-pill">Copy & Paste On Your Website</button>
+              </div>
+            </div>
+            <br/>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <div style="text-align:center;width: 100%;">
+                  <div id="on-the-fly-behavior" style="display:none;">
+                    <a id="fullURL" target="_blank"><img src="https://i.ibb.co/CWHZfkh/by.png" alt="buymechai" border="0"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     
+    <footer class="footer-section bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us?</h3>
+            <p>Born out of sheer love for Indian developers, GMC is an attempt for hackers / coders / dreamers to get gratified for the work they do by their backers!</p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+          </div>
+
+          <div class="col-md-4">
+            <h3>Contact Us?</h3>
+            <p>Hit me up at vaibhav210991@gmail.com</p>
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            <p>
+              Copyright © 2020, Built with 💛 <i style="margin-left:7px;margin-right:7px;">in</i> 🇮🇳
+            </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    
+  </div> <!-- .site-wrap -->
+    <script>
+    function getVal() {
+        var x = document.getElementById("fupi");
+    }
+
+    function getName() {
+        var x = document.getElementById("fname");
+    }
+
+    function getAmount() {
+        var x = document.getElementById("famount");
+    }
+
+    function getURL(){
+            var y = 'upi://pay?pa=' + document.getElementById("fupi").value + '&pn=' + document.getElementById("fname").value + '&am=' + document.getElementById("famount").value + '&mode=00&orgid=000000';
+        document.getElementById("fullURL").href = y;
+        document.getElementById("on-the-fly-behavior").style.display = "block";
+        var w = '<div style="text-align:center;width: 100%;">' +
+                  '<style scoped>' +
+                    '.on-the-fly-behavior {' +
+                        'display: none;' +
+                    '}' +
+                    '@media (max-width: 500px) {' +
+                        '.on-the-fly-behavior {' +
+                            'display: block;' +
+                        '}' +
+                    '}' +
+                  '</style>' +
+                      '<div class="on-the-fly-behavior">' +
+                          '<a href="' + y + '" target="_blank"><img src="https://i.ibb.co/CWHZfkh/by.png" alt="buymechai" border="0"></a>' +
+                      '</div>' +
+                '</div>';
+
+        document.getElementById("fullCode").innerHTML = w;
+    }
+
+    function copyCode() {
+        var copyText = document.getElementById("fullCode");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+        document.execCommand("copy");
+    }
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
