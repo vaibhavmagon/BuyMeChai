@@ -642,6 +642,17 @@ h1, h2, h3, h4, h5,
       .intro-section p {
         padding: 0px 90px; } }
 
+.test-me{
+   font-weight: 600;
+   padding-top:10px;
+   margin-bottom: 0px;
+}
+
+.try-me{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
 .img-absolute {
   position: absolute;
   right: 10%;
