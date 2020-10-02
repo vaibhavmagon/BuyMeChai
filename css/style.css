@@ -166,6 +166,12 @@ h1, h2, h3, h4, h5,
     text-transform: uppercase;
     font-weight: 900; }
 
+.create-class{
+    text-decoration: underline;
+    font-weight: 900;
+    color: #13f4ef;
+}
+
 .bg-text-line {
   display: inline;
   background: #000;
