@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Buy Me Chai.</title>
+    <title>Buy Me Chai - Gratification Badge!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -67,13 +67,14 @@
             <div class="col-12">
               <div class="row align-items-center">
                 <div class="col-lg-12 mb-6">
-                  <h1  data-aos="fade-up" data-aos-delay="100">Indian Dev's, Open Source & Get Paid!</h1>
-                  <p class="mb-4">Just by adding this cool badge (Buy me chai) to your website — you can accept support, and eventually build a direct relationship with your backers.</p>
-                  <p class="mb-2"><u>Though, we currently support only UPI and works only on mobile</u> 🚀 </p>
+                  <h1  data-aos="fade-up" data-aos-delay="100">Gratification Badge for Indian Dev's!</h1>
+                  <p class="mb-4"><b style="font-weight: 900;">Buy Me Chai</b> is a cool badge that can be added to any website which let's you accept support - for now a tip to get a cup of ☕ - and eventually build a direct relationship with your backers.<br/> <b style="font-weight: 900;"> Simple, fast & commission free!</b></p>
+                  <p class="mb-2">Currently active only in <u style="font-weight: 900;">India</u> supporting <u style="font-weight: 900;">UPI</u> (mobile-centric). 🚀 </p>
                   <br/>
-                  <div>
-                    <a href="upi://pay?pa=vaibhav210991@okaxis&pn=Vaibhav&am=10&mode=00&orgid=000000" target="_blank"><img src="https://i.ibb.co/CWHZfkh/by.png" alt="buymechai" border="0"></a>
+                  <div style="cursor: pointer;">
+                    <a href="upi://pay?pa=vaibhav210991@okaxis&pn=Vaibhav&am=10&mode=00&orgid=000000" target="_blank"><img src="https://i.ibb.co/NVRMgDt/by.png" alt="buymechai" border="0"></a>
 				  </div>
+                  <p> Try me ⬆️</p>
                 </div>
               </div>
             </div>
@@ -90,14 +91,14 @@
           <div class="col-md-7">
             
             <h2 class="section-title mb-3">Create your badge!</h2>
-            <p class="mb-5">Get your personalized <b>Buy me chai</b> badge (enabled with your UPI) to get instant tip for projects that you code with your bare hands! ⚡</p>
+            <p class="mb-5">Get your personalized <b style="font-weight: 900;">Buy Me Chai</b> badge (enabled with your UPI) to get instant tip for projects that you code with your bare hands! ⚡</p>
 
             <div class="form-group row">
               <div class="col-md-6 mb-3 mb-lg-0">
                 <input type="text" class="form-control" id="fname" placeholder="Enter Name">
               </div>
               <div class="col-md-6">
-                <input type="number" class="form-control" id="famount" placeholder="Enter Amount (Rs.)">
+                <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "3" class="form-control" id="famount" placeholder="Enter Amount (Rs.)">
               </div>
             </div>
 
@@ -112,16 +113,17 @@
                 <button onclick="getURL()" class="btn btn-primary py-3 px-5 btn-pill">Create</button>
               </div>
             </div>
+            <br/>
 
             <div class="form-group row">
               <div class="col-md-12">
-                <textarea id="fullCode" class="form-control" cols="30" rows="10"></textarea>
+                <textarea id="fullCode" class="form-control" cols="30" rows="10" placeholder="This will get you the code once you click on Create!"></textarea>
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-6">
-                <button onclick="copyCode()" class="btn btn-primary py-3 px-5 btn-pill">Copy & Paste On Your Website</button>
+                <button onclick="copyCode()" class="btn btn-primary py-3 px-5 btn-pill">Copy & Paste to Your Website</button>
               </div>
             </div>
             <br/>
@@ -147,7 +149,7 @@
         <div class="row">
           <div class="col-md-4">
             <h3>About Us?</h3>
-            <p>Born out of sheer love for Indian developers, BMC is an attempt for hackers / coders / dreamers to get gratified for the work they do by their backers!</p>
+            <p>Born out of sheer love for developers, Buy Me Chai is an attempt for hackers / coders / dreamers to get gratified for their work by their backers!</p>
           </div>
 
           <div class="col-md-3 ml-auto">
@@ -155,7 +157,7 @@
 
           <div class="col-md-4">
             <h3>Contact Us?</h3>
-            <p>Hit me up at vaibhav210991@gmail.com</p>
+            <p>Hit me up at vaibhav210991@gmail.com ✉️</p>
           </div>
 
         </div>
@@ -163,9 +165,9 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
-            <p>
-              Copyright © 2020, Built with 💛 <i style="margin-left:7px;margin-right:7px;">in</i> 🇮🇳
-            </p>
+              <p>
+                Copyright © 2020, Built with 💛 <i style="margin-left:7px;margin-right:7px;text-decoration:none;">in</i> 🇮🇳
+              </p>
             </div>
           </div>
           
@@ -200,6 +202,7 @@
                     '@media (max-width: 500px) {' +
                         '.on-the-fly-behavior {' +
                             'display: block;' +
+                            'cursor: pointer;' +
                         '}' +
                     '}' +
                   '</style>' +
