@@ -653,8 +653,8 @@ h1, h2, h3, h4, h5,
 }
 
 .try-me{
-    font-size: 13px;
-    padding-top: 10px;
+    font-size: 15px !important;
+    padding-top: 5px !important;
 }
 
 .img-absolute {
