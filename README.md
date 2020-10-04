@@ -1,3 +1,9 @@
 # Buy Me Chai
 
-Just by adding this cool badge (Get my chai) to your website — you can accept support, and eventually build a direct relationship with your backers.
+<b> Gratification Badge for Indi Dev. </b>
+
+Buy Me Chai is a badge that can be added on any website, helping you accept support - for now a tip to get a cup of ☕ . No integration, simple & commission free!
+
+Currently active only in India supporting UPI (mobile-only) 🚀
+
+[![Buy Me Chai](https://i.ibb.co/Xkdj83y/image-2.png)](upi://pay?pa=vaibhav210991@okaxis&pn=Vaibhav&am=10&tn=Buying%20a%20chai%20for%20Vaibhav&mode=00&orgid=000000)
