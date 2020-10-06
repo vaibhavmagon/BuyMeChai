@@ -102,11 +102,11 @@
                 </a>
             </div>
             <div class="row qrM">
-                <h2 class="ty"> Thank you for supporting <i id="name"></i> ❤️</h2>
+                <h2 class="ty"> Thank you for supporting <i id="name"></i>! ❤️</h2>
             </div>
             <div class="row qrBoxOuter qrM">
                 <div id="qrCode" style="text-align: center"></div>
-                <p>(Scan via any QR code App like PayTm, GPay etc.)</p>
+                <p>(Scan via any QR code App like PayTm or GPay)</p>
             </div>
             <div class="row">
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
@@ -139,7 +139,7 @@
         while (match = search.exec(query))
            urlParams[decode(match[1])] = decode(match[2]);
 
-       let text = "upi://pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
+       let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
        if("nm" in urlParams){
            text = text + "&pn=" + urlParams["nm"] + "&tn=Buying%20a%20chai%20for%20" + urlParams["nm"]
            document.getElementById("name").innerHTML = urlParams["nm"];
@@ -150,13 +150,13 @@
            text = text + "&am=" + urlParams["amt"]
        }
 
-       document.getElementsByClassName("payLogoAnchor")[0].href = text;
-       document.getElementsByClassName("payLogoAnchor")[1].href = text;
-       document.getElementsByClassName("payLogoAnchor")[2].href = text;
-       document.getElementsByClassName("payLogoAnchor")[3].href = text;
+       document.getElementsByClassName("payLogoAnchor")[0].href = "upi://" + text;
+       document.getElementsByClassName("payLogoAnchor")[1].href = "upi://" + text;
+       document.getElementsByClassName("payLogoAnchor")[2].href = "https://tez.google.com/" + text;
+       document.getElementsByClassName("payLogoAnchor")[3].href = "upi://" + text;
 
         var qrcode = new QRCode("qrCode", {
-            text: "upi://pay?pa=" + urlParams["vpa"],
+            text: "upi://" + text,
             width: 300,
             height: 300,
             colorDark : "#000000",
