@@ -178,7 +178,7 @@
            text = text + "&am=" + urlParams["amt"]
        }
 
-       document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20via%20BuyMeChai:%20" + window.location.href;
+       document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20via%20BuyMeChai:%20" + encodeURIComponent(window.location.href);
 
        document.getElementsByClassName("payLogoAnchor")[0].href = "upi://" + text;
        document.getElementsByClassName("payLogoAnchor")[1].href = "paytmmp://" + text;

@@ -205,6 +205,7 @@
   </div> <!-- .site-wrap  var y = 'upi://pay?pa=' + document.getElementById("fupi").value + '&pn=' + document.getElementById("fname").value + '&am=' + document.getElementById("famount").value + '&tn=Buying%20a%20chai%20for%20' + document.getElementById("fname").value + '&mode=00&orgid=000000'; -->
   <script>
     function getURL(){
+        document.getElementById("fullCode").innerHTML = "";
         var y = 'https://buymechai.ml/link.html?vpa=' + document.getElementById("fupi").value + '&nm=' + document.getElementById("fname").value + '&amt=' + document.getElementById("famount").value;
         document.getElementById("fullURL").href = y;
         document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + encodeURIComponent(y);
@@ -219,7 +220,6 @@
                           '<a href="' + y + '" target="_blank"><img style="border: 2px solid #3e2e21;border-radius: 20px;" src="https://i.ibb.co/Xkdj83y/image-2.png" alt="buymechai" border="0"></a>' +
                       '</div>' +
                 '</div>';
-
         document.getElementById("fullCode").innerHTML = w;
     }
 
