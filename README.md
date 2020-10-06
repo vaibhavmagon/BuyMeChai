@@ -6,6 +6,6 @@ Buy Me Chai is a badge that can be added on any website, helping you accept supp
 
 Currently active only in India supporting UPI (mobile-only) 🚀
 
-[![Buy Me Chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml)
+[![Buy Me Chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml/link.html?vpa=vaibhav210991@okaxis&nm=Vaibhav&amt=10)
 
 <!-- upi://pay?pa=vaibhav210991@okaxis&pn=Vaibhav&am=10&tn=Buying%20a%20chai%20for%20Vaibhav&mode=00&orgid=000000 -->
