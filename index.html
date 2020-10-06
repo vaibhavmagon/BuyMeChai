@@ -155,7 +155,7 @@
                   <div id="on-the-fly-behavior" style="display:none;">
                     <a id="fullURL" target="_blank"><img style="border: 2px solid #3e2e21;border-radius: 20px;" src="https://i.ibb.co/Xkdj83y/image-2.png" alt="buymechai" border="0"></a>
                     <p class="test-me"> Test Now ⬆️</p>
-                    <p>(Or just share it in your network 😊)️</p>
+                    <p>Or just share it in your network 😊️</p>
                     <a id="fullWS" target="_blank"><img style="width:25%" src="images/ws.png" alt="buymechai" border="0"/></a>
                   </div>
                 </div>
@@ -207,7 +207,7 @@
     function getURL(){
         var y = 'https://buymechai.ml/link.html?vpa=' + document.getElementById("fupi").value + '&nm=' + document.getElementById("fname").value + '&amt=' + document.getElementById("famount").value;
         document.getElementById("fullURL").href = y;
-        document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + y;
+        document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + encodeURIComponent(y);
         document.getElementById("on-the-fly-behavior").style.display = "block";
         var w = '<div style="text-align:center;width: 100%;">' +
                   '<style scoped>' +
