@@ -77,6 +77,10 @@
                 margin-bottom: 25px;
                 min-width: 0px;
             }
+            .ws{
+                width:10%;
+                cursor: pointer;
+            }
          }
          @media (max-width: 991.98px) {
             .payLogo{
@@ -88,6 +92,10 @@
             }
             .ty{
                 font-size: 33px;
+            }
+            .ws{
+                width:25%;
+                cursor: pointer;
             }
          }
     </style>
@@ -104,15 +112,18 @@
             <div class="row qrM">
                 <h2 class="ty"> Thank you for supporting <i id="name"></i>! ❤️</h2>
             </div>
-            <div class="row qrBoxOuter qrM">
+            <div class="row qrBoxOuter">
                 <div id="qrCode" style="text-align: center"></div>
                 <p>(Scan via any QR code App like PayTm or GPay)</p>
             </div>
-            <div class="row">
+            <div class="row qrM">
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/paytm.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/gTez.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/phonepe.png" alt="buymechai" border="0"></a>
+            </div>
+            <div class="row">
+                <a id="fullWS" target="_blank"><img class="ws" src="images/ws.png" alt="buymechai" border="0"/></a>
             </div>
         </div>
         <div class="foot">
@@ -149,6 +160,8 @@
        if("amt" in urlParams){
            text = text + "&am=" + urlParams["amt"]
        }
+
+       document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20via%20BuyMeChai:%20" + window.location.href;
 
        document.getElementsByClassName("payLogoAnchor")[0].href = "upi://" + text;
        document.getElementsByClassName("payLogoAnchor")[1].href = "upi://" + text;
