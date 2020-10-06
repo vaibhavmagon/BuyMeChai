@@ -1,0 +1,146 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/qrcode.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <meta property="og:title" content="Buy Me Chai">
+    <meta property="og:description" content="Gratification Badge for Creators">
+    <meta property="og:image" content="https://i.ibb.co/NVRMgDt/by.png">
+    <meta property="og:url" content="https://buymechai.ml">
+    <style>
+        body{
+            text-align:center;
+            background: #373B50;
+        }
+        .qrBoxOuter {
+            padding: 4mm;
+            margin-top: 2mm;
+            margin-bottom: 2mm;
+        }
+        #qrCode{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6%;
+        }
+        .container{
+            padding:70px;
+        }
+        .bmcLogo{
+            border: 2px solid #3e2e21;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            min-width: 315px;
+        }
+        .qrDiv {
+            border: 1px solid #3e2e21;
+            padding: 70px;
+            background: #F8F9FA;
+            border-radius: 20px;
+        }
+        .qrM{
+           margin-bottom: 30px;
+        }
+        .payLogo{
+            padding: 10px;
+        }
+        .foot{
+            color: white;
+            padding-top: 50px;
+            font-size: 17;
+        }
+         @media (min-width: 991.98px) {
+            .container{
+                padding:30px;
+            }
+            .bmcLogo{
+                border: 2px solid #3e2e21;
+                border-radius: 20px;
+                margin-bottom: 25px;
+                min-width: 0px;
+            }
+            .qrDiv {
+                border: 1px solid #3e2e21;
+                height: 100%;
+                padding: 30px;
+            }
+         }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="row qrDiv">
+            <div class="row">
+                <a href="https://buymechai.ml" target="_blank">
+                    <img class="bmcLogo" src="https://i.ibb.co/Xkdj83y/image-2.png" alt="buymechai" border="0">
+                </a>
+            </div>
+            <div class="row qrM">
+                <h2 style="font-size: 28px;"> Thank you for supporting <i id="name"></i>! ❤️</h2>
+            </div>
+            <div class="row qrBoxOuter qrM">
+                <div id="qrCode" style="text-align: center"></div>
+            </div>
+            <div class="row qrM">
+                <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
+                <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/paytm.png" alt="buymechai" border="0"></a>
+                <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/gTez.png" alt="buymechai" border="0"></a>
+                <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/phonepe.png" alt="buymechai" border="0"></a>
+            </div>
+        </div>
+        <div class="foot">
+            <p>
+            Copyright © 2020, Made with 💛 <i style="margin-left:5px;margin-right:2px;font-style: normal;">by <a href="https://vaibhavmagon.github.io" target="_blank" style="color:white;">Vaibhav Magon</a> in</i> 🇮🇳
+          </p>
+           <p>
+             (Not for Profit & Free to use Initiative)
+          </p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var urlParams;
+    (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+
+        urlParams = {};
+        while (match = search.exec(query))
+           urlParams[decode(match[1])] = decode(match[2]);
+
+       let text = "upi://pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
+       if("nm" in urlParams){
+           text = text + "&pn=" + urlParams["nm"] + "&tn=Buying%20a%20chai%20for%20" + urlParams["nm"]
+           document.getElementById("name").innerHTML = urlParams["nm"];
+       }else{
+           document.getElementById("name").innerHTML = "me";
+       }
+       if("amt" in urlParams){
+           text = text + "&am=" + urlParams["amt"]
+       }
+
+       document.getElementsByClassName("payLogoAnchor")[0].href = text;
+       document.getElementsByClassName("payLogoAnchor")[1].href = text;
+       document.getElementsByClassName("payLogoAnchor")[2].href = text;
+       document.getElementsByClassName("payLogoAnchor")[3].href = text;
+
+        var qrcode = new QRCode("qrCode", {
+            text: "upi://pay?pa=" + urlParams["vpa"],
+            width: 300,
+            height: 300,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    })();
+</script>
+</html>
