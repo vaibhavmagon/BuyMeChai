@@ -87,7 +87,10 @@
                   <div style="cursor: pointer;">
                     <a href="https://bit.ly/3lg8Mba" target="_blank"><img style="border: 2px solid #3e2e21;border-radius: 20px;" src="https://i.ibb.co/Xkdj83y/image-2.png" alt="buymechai" border="0"></a>
 				  </div> <!-- https://i.ibb.co/NVRMgDt/by.png -->
-                  <p class="try-me">Check us out? ⬆️</p>
+                  <!--<p class="try-me">Check us out? ⬆️</p>-->
+                  <br/>
+                  <br/>
+                  <a href="https://buymechai.ml/works.html" class="create-class">Confused?  We're Here!</a>
                 </div>
               </div>
             </div>
@@ -155,13 +158,14 @@
                   <div id="on-the-fly-behavior" style="display:none;">
                     <a id="fullURL" target="_blank"><img style="border: 2px solid #3e2e21;border-radius: 20px;" src="https://i.ibb.co/Xkdj83y/image-2.png" alt="buymechai" border="0"></a>
                     <p class="test-me"> Test Now ⬆️</p>
-                    <p>Or just share it in your network 😊️</p>
+                    <br/><br/>
+                    <p id="linkData" onclick="copyLink()"></p>
+                    <p>Copy (by just clicking) or share in your network 😊️</p>
                     <a id="fullWS" target="_blank"><img style="width:25%" src="images/ws.png" alt="buymechai" border="0"/></a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -172,7 +176,7 @@
         <div class="row">
           <div class="col-md-4">
             <h3>About Us?</h3>
-            <p>Born out of sheer love for creators, Buy Me Chai is an attempt for Artists, Instagramers, Hackers, Coders, Designers & Dreamers to get gratified (sponsored) for their work by their supporters!</p>
+            <p>Born out of sheer love for creators, Buy Me Chai is an attempt for Artists, Instagramers, Hackers, Coders, Designers & Dreamers to get gratified (sponsored) by their supporters!</p>
           </div>
 
           <div class="col-md-3 ml-auto">
@@ -206,8 +210,11 @@
   <script>
     function getURL(){
         document.getElementById("fullCode").innerHTML = "";
+        document.getElementById("linkData").innerHTML = "";
+        document.getElementById("fullWS").href = "";
         var y = 'https://buymechai.ml/link.html?vpa=' + document.getElementById("fupi").value + '&nm=' + document.getElementById("fname").value + '&amt=' + document.getElementById("famount").value;
         document.getElementById("fullURL").href = y;
+        document.getElementById("linkData").innerHTML = y;
         document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + encodeURIComponent(y);
         document.getElementById("on-the-fly-behavior").style.display = "block";
         var w = '<div style="text-align:center;width: 100%;">' +
@@ -228,6 +235,16 @@
         copyText.select();
         copyText.setSelectionRange(0, 99999); /*For mobile devices*/
         document.execCommand("copy");
+    }
+
+    function copyLink() {
+        var text = document.getElementById("linkData").innerText;
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = text;
+        elem.select();
+        document.execCommand("copy");
+        document.body.removeChild(elem);
     }
   </script>
   <script src="js/jquery-3.3.1.min.js"></script>

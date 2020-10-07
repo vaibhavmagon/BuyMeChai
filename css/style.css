@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .intro-section, .intro-section .container > .row {
     height: 100vh;
-    min-height: 800px; }
+    min-height: 850px; }
   .intro-section.single-cover, .intro-section.single-cover .container > .row {
     height: 50vh;
     min-height: 400px; }
@@ -762,6 +762,15 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .test-title {
       font-size: 1 rem; } }
+
+#linkData{
+    background: #5A50E5;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 .counter .icon-wrap {
   margin-right: 1.5rem; }
