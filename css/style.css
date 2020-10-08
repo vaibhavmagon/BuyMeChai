@@ -764,9 +764,9 @@ h1, h2, h3, h4, h5,
       font-size: 1 rem; } }
 
 #linkData{
-    background: #5A50E5;
+    background: #F6F8FA;
     border-radius: 10px;
-    color: white;
+    color:#095CC5;
     padding: 20px;
     font-weight: 600;
     cursor: pointer;
