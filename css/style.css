@@ -806,7 +806,17 @@ h1, h2, h3, h4, h5,
         right: auto;
         position: relative;
         width: 100%;
-        max-width: 100%; } }
+        max-width: 100%; }
+      #linkData {
+            border-radius: 10px;
+            color: #095CC5;
+            padding: 20px 5px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #095CC5;
+            font-size: 10px;
+        }  
+     }
     .image-absolute-box .box .icon-wrap {
       color: #fff;
       margin-bottom: 1.5rem; }
