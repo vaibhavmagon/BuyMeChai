@@ -119,7 +119,7 @@
 
             <div class="form-group row">
               <div class="col-md-6 mb-3 mb-lg-0">
-                <input type="text" class="form-control" id="fname" placeholder="Enter Name" required>
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" required>
               </div>
               <div class="col-md-6">
                 <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "3" class="form-control" id="famount" placeholder="Enter Chai Amount (Rs.)" required>
@@ -128,7 +128,7 @@
 
             <div class="form-group row" style="margin-bottom: 0px;">
               <div class="col-md-12">
-                <input type="text" class="form-control" id="fupi" placeholder="Enter Valid UPI Id (For ex. vaibhav210991@okaxis)" required>
+                <input type="text" autocapitalize="none" class="form-control" id="fupi" placeholder="Enter Valid UPI Id (For ex. vaibhav210991@okaxis)" required>
               </div>
             </div>
             <a href="https://support.google.com/pay/india/answer/7386842?hl=en-GB" target="_blank" class="create-class" style="color: #000;font-size:13px">UPI has to be Valid. How to get one?</a>
@@ -213,7 +213,7 @@
         document.getElementById("fullCode").innerHTML = "";
         document.getElementById("linkData").innerHTML = "";
         document.getElementById("fullWS").href = "";
-        var y = 'https://buymechai.ml/link.html?vpa=' + document.getElementById("fupi").value + '&nm=' + document.getElementById("fname").value + '&amt=' + document.getElementById("famount").value;
+        var y = 'https://buymechai.ml/link.html?vpa=' + (document.getElementById("fupi").value).replace(/ /g,'') + '&nm=' + (document.getElementById("fname").value).replace(/ /g,'') + '&amt=' + document.getElementById("famount").value;
         document.getElementById("fullURL").href = y;
         document.getElementById("linkData").innerHTML = y;
         document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + encodeURIComponent(y);
