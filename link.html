@@ -149,6 +149,7 @@
             <div class="row qrBoxOuter">
                 <div id="qrCode" style="text-align: center"></div>
                 <p>(Scan via any QR code Apps like PayTm or GPay)</p>
+                <p id="validity" style="font-weight: 600"></p>
             </div>
             <div class="row">
                 <h3>Mobile Only Options:</h3>
@@ -186,6 +187,12 @@
         urlParams = {};
         while (match = search.exec(query))
            urlParams[decode(match[1])] = decode(match[2]);
+
+       if("vpa" in urlParams && urlParams["vpa"] != "undefined"){
+           document.getElementById("validity").innerHTML = "Valid ✅";
+       }else{
+           document.getElementById("validity").innerHTML = "Invalid ❌";
+       }
 
        let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
        if("nm" in urlParams){
