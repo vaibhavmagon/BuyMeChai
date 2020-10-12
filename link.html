@@ -188,7 +188,7 @@
         while (match = search.exec(query))
            urlParams[decode(match[1])] = decode(match[2]);
 
-       if("vpa" in urlParams && urlParams["vpa"] != "undefined"){
+       if("vpa" in urlParams && urlParams["vpa"] != "undefined" && urlParams["vpa"] != "NaN"){
            document.getElementById("validity").innerHTML = "Valid ✅";
        }else{
            document.getElementById("validity").innerHTML = "Invalid ❌";
