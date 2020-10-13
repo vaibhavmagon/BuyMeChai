@@ -640,7 +640,10 @@ h1, h2, h3, h4, h5,
   }
   @media (min-width: 991.98px) {
       .intro-section p {
-        padding: 0px 90px; } }
+        padding: 0px 90px;
+        font-size: 1.2rem;
+      }
+  }
 
 .test-me{
    font-weight: 600;
