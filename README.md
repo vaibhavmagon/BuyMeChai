@@ -1,5 +1,7 @@
 # Buy Me Chai
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 <b>Gratification badge for Creators (100% #no-code) ⚡</b>
 
 Buy Me Chai gives an opportunity to have a sponsor me page for creators that can be embedded in a website, put up in a bio of an Instagram account or just added to a Medium Blog. This helps their supporters gratify and support their art via sponsoring a cup of tea! Yes it's that simple.
