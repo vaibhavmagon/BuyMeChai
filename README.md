@@ -1,14 +1,14 @@
-# Buy Me Chai
+# Buy me chai
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <b>Gratification badge for Creators (100% #no-code) ⚡</b>
 
-Buy Me Chai gives an opportunity to have a sponsor me page for creators that can be embedded in a website, put up in a bio of an Instagram account or just added to a Medium Blog. This helps their supporters gratify and support their art via sponsoring a cup of tea! Yes it's that simple.
+Buy me chai gives an opportunity to have a sponsor me page for creators that can be embedded in a website, put up in a bio of an Instagram account or just added to a Medium Blog. This helps their supporters gratify and support their art via sponsoring a cup of tea! Yes it's that simple.
 
 It's an <b>India first product</b> and is built on the backbone of <b>UPI payments</b> and thus requires No Integration. Also, since we are creator-first this is absolutely Commission Free (quite literally) 🤘
 
-Buy Me Chai is a Not for Profit Initiative to help creators get support for their creative projects!
+Buy me chai is a Not for Profit Initiative to help creators get support for their creative projects!
 
 <br/>
 
@@ -29,7 +29,7 @@ Once you have created your badge and creator page link you can directly use it i
 For ex, replace the creator page link and use this:
 
 ```console
-[![Buy Me Chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml/link.html?vpa=vaibhav210991@okaxis &nm=Vaibhav&amt=10)
+[![Buy me chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml/link.html?vpa=vaibhav210991@okaxis &nm=Vaibhav&amt=10)
 ```
 
 Check it out on a repo here: <a href="https://github.com/vaibhavmagon/Kafka-Spark-Product-Recommendation" target="_blank">https://github.com/vaibhavmagon/Kafka-Spark-Product-Recommendation</a>
@@ -44,15 +44,15 @@ Check it out on a blog here: <a href="https://medium.com/@vaibhav210991/host-a-p
 
 <br/>
 
-## How to get the Buy Me Chai logo?
+## How to get the Buy me chai logo?
 Oh! The url is right here: https://i.ibb.co/Xkdj83y/image-2.png
 (You can absolutely download it or copy it and use it anywhere)
 
 <br/>
 
-## Buy Me Chai? 😎
+## Buy me chai? 😎
 
-[![Buy Me Chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml/link.html?vpa=vaibhav210991@okaxis&nm=Vaibhav&amt=10)
+[![Buy me chai](https://i.ibb.co/Xkdj83y/image-2.png)](https://buymechai.ml/link.html?vpa=vaibhav210991@okaxis&nm=Vaibhav&amt=10)
 
 <br/>
 
