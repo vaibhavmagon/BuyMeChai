@@ -134,22 +134,13 @@
             </div>
             <a href="https://support.google.com/pay/india/answer/7386842?hl=en-GB" target="_blank" class="create-class" style="color: #000;font-size:13px">UPI has to be Valid. How to get one?</a>
 
-            <div class="form-group row" style="margin-top: 15px;">
-              <div class="col-md-6">
-                <button onclick="getURL()" class="btn btn-primary py-3 px-5 btn-pill">Create</button>
-              </div>
-            </div>
+            <br/>
             <br/>
 
-            <div class="form-group row">
+            <div class="form-group row" style="margin-top: 15px;">
               <div class="col-md-12">
-                <textarea id="fullCode" class="form-control" cols="30" rows="10" placeholder="This will get you the code once you click on Create!"></textarea>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <div class="col-md-6">
-                <button onclick="copyCode()" class="btn btn-primary py-3 px-5 btn-pill">Copy & Paste on Your Website</button>
+                <button onclick="getURL()" class="btn btn-primary py-3 px-5 btn-pill">Create</button>
+                <button onclick="clearVal()" class="btn btn-primary py-3 px-5 btn-pill" style="float: right;">Refresh</button>
               </div>
             </div>
             <br/>
@@ -162,12 +153,28 @@
                     <p class="test-me"> Test Now ⬆️</p>
                     <br/><br/>
                     <p id="linkData" onclick="copyLink()"></p>
-                    <p style="font-size:0.9em">Copy (by just clicking) or share in your network 😊️</p>
+                    <p style="font-size:0.9em">Copy (just click above) or share in your network 😊️</p>
                     <a id="fullWS" target="_blank"><img style="width:25%" src="images/ws.png" alt="buymechai" border="0"/></a>
                   </div>
                 </div>
               </div>
             </div>
+
+             <br/>
+
+            <div class="form-group row" id="codeCopyTextArea" style="display:none;">
+              <div class="col-md-12">
+                <textarea id="fullCode" class="form-control" cols="30" rows="10" placeholder="This will get you the code once you click on Create!"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row" id="codeCopyTextButton" style="display:none;">
+              <div class="col-md-6">
+                <button onclick="copyCode()" class="btn btn-primary py-3 px-5 btn-pill">Copy & Paste on Your Website</button>
+              </div>
+            </div>
+
+            <br/>
           </div>
         </div>
       </div>
@@ -223,6 +230,8 @@
         document.getElementById("linkData").innerHTML = y;
         document.getElementById("fullWS").href = "https://wa.me/?text=You%20can%20sponsor%20me%20via%20BuyMeChai:%20" + encodeURIComponent(y);
         document.getElementById("on-the-fly-behavior").style.display = "block";
+        document.getElementById("codeCopyTextArea").style.display = "block";
+        document.getElementById("codeCopyTextButton").style.display = "block";
         var w = '<div style="text-align:center;width: 100%;">' +
                   '<style scoped>' +
                     '.on-the-fly-behavior {' +
@@ -241,6 +250,19 @@
         copyText.select();
         copyText.setSelectionRange(0, 99999); /*For mobile devices*/
         document.execCommand("copy");
+    }
+
+    function clearVal() {
+        console.log('#####');
+        document.getElementById("on-the-fly-behavior").style.display = "none";
+        document.getElementById("codeCopyTextArea").style.display = "none";
+        document.getElementById("codeCopyTextButton").style.display = "none";
+        document.getElementById("fullCode").innerHTML = "";
+        document.getElementById("linkData").innerHTML = "";
+        document.getElementById("fullWS").href = "";
+        document.getElementById("fupi").value = "";
+        document.getElementById("fname").value = "";
+        document.getElementById("famount").value = "";
     }
 
     function copyLink() {
