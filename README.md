@@ -19,7 +19,7 @@ Buy me chai is a Not for Profit Initiative to help creators get support for thei
 
 3. Your supporters can click on your badge or creator page link and sponsor you via Paytm, GPay, PhonePe or any other UPI apps in no time! 👏
 
-4. Share and feel blessed - It feel's awesome! 😇
+4. Share and feel blessed - It feels awesome! 😇
 
 <img src="https://buymechai.ml/images/great.png"/>
 
