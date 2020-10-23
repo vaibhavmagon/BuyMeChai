@@ -178,6 +178,25 @@
 <script>
     var urlParams;
     (window.onpopstate = function () {
+        let country;
+        const http = new XMLHttpRequest()
+        http.open("GET", "https://ipinfo.io?token=b68c3fd62a6a01")
+        http.send()
+        http.onreadystatechange = (e) => {
+            if(http.readyState === XMLHttpRequest.DONE) {
+                var status = http.status;
+                if (status === 0 || (status >= 200 && status < 400)) {
+                    ele = JSON.parse(http.responseText)
+                    country = ele["country"];
+                } else {
+                    country = null;
+                }
+                loadData(country)
+            }
+        }
+    })();
+
+    function loadData(country){
         var match,
             pl     = /\+/g,  // Regex for replacing addition symbol with a space
             search = /([^&=]+)=?([^&]*)/g,
@@ -188,7 +207,12 @@
         while (match = search.exec(query))
            urlParams[decode(match[1])] = decode(match[2]);
 
-       if("vpa" in urlParams && urlParams["vpa"] != "undefined" && urlParams["vpa"] != "NaN"){
+       console.log("User logged in from: ", country);
+       if("vpa" in urlParams && urlParams["vpa"] != "undefined" && urlParams["vpa"] != "NaN" && country == "IN"){
+           document.getElementById("validity").innerHTML = "Valid ✅";
+       }else if("vpa" in urlParams && urlParams["vpa"] != "undefined" && urlParams["vpa"] != "NaN" && (country != null && country != "IN")){
+           document.getElementById("validity").innerHTML = "Only Active in India! 🥺";
+       }else if("vpa" in urlParams && urlParams["vpa"] != "undefined" && urlParams["vpa"] != "NaN"){
            document.getElementById("validity").innerHTML = "Valid ✅";
        }else{
            document.getElementById("validity").innerHTML = "Invalid ❌";
@@ -220,6 +244,6 @@
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
         });
-    })();
+    }
 </script>
 </html>
