@@ -44,6 +44,12 @@ Check it out on a blog here: <a href="https://medium.com/@vaibhav210991/host-a-p
 
 <br/>
 
+## Worldwide Reach
+
+<img src="https://i.ibb.co/VvzZ98K/Reach.png"/>
+
+<br/>
+
 ## How to get the Buy me chai logo?
 Oh! The url is right here: https://i.ibb.co/Xkdj83y/image-2.png
 (You can absolutely download it or copy it and use it anywhere)
