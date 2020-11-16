@@ -129,6 +129,9 @@
                 font-size: 24px;
                 font-weight: 600;
             }
+            .payLogoAnchor {
+              pointer-events: none;
+            }
          }
     </style>
 </head>
@@ -148,11 +151,11 @@
             </div>
             <div class="row qrBoxOuter">
                 <div id="qrCode" style="text-align: center"></div>
-                <p>(Scan via any QR code Apps like PayTm or GPay)</p>
+                <p>(Scan via any QR code Apps like PayTm or GPay | Working)</p>
                 <p id="validity" style="font-weight: 600"></p>
             </div>
             <div class="row">
-                <h3>Mobile Only Options:</h3>
+                <h3>Mobile Options (Currently Inactive):</h3>
             </div>
             <div class="row qrM">
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
@@ -218,7 +221,7 @@
            document.getElementById("validity").innerHTML = "Invalid ❌";
        }
 
-       let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
+       let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000&cu=INR"
        if("nm" in urlParams){
            text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'') + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'')
            document.getElementById("name").innerHTML = urlParams["nm"];
@@ -238,8 +241,8 @@
 
         var qrcode = new QRCode("qrCode", {
             text: "upi://" + text,
-            width: 300,
-            height: 300,
+            width: 350,
+            height: 350,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
