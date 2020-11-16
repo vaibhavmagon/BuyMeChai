@@ -220,7 +220,7 @@
 
        let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000"
        if("nm" in urlParams){
-           text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'') + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'')
+           text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'')
            document.getElementById("name").innerHTML = urlParams["nm"];
        }else{
            document.getElementById("name").innerHTML = "me";
@@ -247,3 +247,5 @@
     }
 </script>
 </html>
+
+<!-- Line 223:  + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'') -->
