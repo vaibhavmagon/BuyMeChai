@@ -151,10 +151,10 @@
                 <p style="font-size: 23px;padding-top: 20px;">Scan via any QR code apps like PayTm, PhonePe or GPay</p>
                 <p id="validity" style="font-weight: 600;font-size:23px;"></p>
             </div>
-            <div class="row">
+            <div class="row" style="display:none;">
                 <h3>App Based Options:</h3>
             </div>
-            <div class="row qrM">
+            <div class="row qrM" style="display:none;">
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/paytm.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/gTez.png" alt="buymechai" border="0"></a>
@@ -220,7 +220,7 @@
 
        let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000&cu=INR"
        if("nm" in urlParams){
-           text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'')
+           text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'') + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'')
            document.getElementById("name").innerHTML = urlParams["nm"];
        }else{
            document.getElementById("name").innerHTML = "me";
@@ -250,5 +250,3 @@
     }
 </script>
 </html>
-
-<!-- + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'') -->
