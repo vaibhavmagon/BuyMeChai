@@ -231,7 +231,12 @@
 
        document.getElementById("fullWS").href = "https://wa.me/?text=Hey,%20you%20can%20support%20my%20work%20at%20Buy%20me%20chai:%20" + encodeURIComponent(window.location.href);
 
-       document.getElementsByClassName("payLogoAnchor")[0].href = "upi://" + text;
+       let intrmUrl = "upi://" + text
+       let signedUrl = "upi://" + text + "&sign=" + btoa(intrmUrl)
+
+       console.log(signedUrl);
+
+       document.getElementsByClassName("payLogoAnchor")[0].href = signedUrl;
        document.getElementsByClassName("payLogoAnchor")[1].href = "paytmmp://" + text;
        document.getElementsByClassName("payLogoAnchor")[2].href = "upi://" + text;
        document.getElementsByClassName("payLogoAnchor")[3].href = "upi://" + text;
