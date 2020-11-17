@@ -148,13 +148,13 @@
             </div>
             <div class="row qrBoxOuter">
                 <div id="qrCode" style="text-align: center"></div>
-                <p>(Scan via any QR code Apps like PayTm or GPay | Working)</p>
+                <p style="font-size: 21px;">Scan via any QR code apps like PayTm, PhonePe or GPay | <i style="color:#56BA31;font-weight:900;">Working</i></p>
                 <p id="validity" style="font-weight: 600"></p>
             </div>
-            <div class="row">
-                <h3>Mobile Options (Currently Inactive):</h3>
+            <div class="row" style="display:none;">
+                <h3>App Based <i style="color:#DC332E;">(Currently Inactive)</i></h3>
             </div>
-            <div class="row qrM">
+            <div class="row qrM" style="display:none;">
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/bhim.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/paytm.png" alt="buymechai" border="0"></a>
                 <a class="payLogoAnchor" target="_blank"><img class="payLogo" src="images/gTez.png" alt="buymechai" border="0"></a>
@@ -231,10 +231,8 @@
 
        document.getElementById("fullWS").href = "https://wa.me/?text=Hey,%20you%20can%20support%20my%20work%20at%20Buy%20me%20chai:%20" + encodeURIComponent(window.location.href);
 
-       let intrmUrl = "upi://" + text
-       let signedUrl = "upi://" + text + "&sign=" + btoa(intrmUrl)
-
-       console.log(signedUrl);
+       let intrmUrl = "upi://" + text;
+       let signedUrl = "upi://" + text + "&sign=" + btoa(intrmUrl);
 
        document.getElementsByClassName("payLogoAnchor")[0].href = signedUrl;
        document.getElementsByClassName("payLogoAnchor")[1].href = "paytmmp://" + text;
@@ -243,8 +241,8 @@
 
         var qrcode = new QRCode("qrCode", {
             text: "upi://" + text,
-            width: 350,
-            height: 350,
+            width: 450,
+            height: 450,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
@@ -252,11 +250,3 @@
     }
 </script>
 </html>
-
-<!--
-
-            .payLogoAnchor {
-              pointer-events: none;
-            }
-
--->
