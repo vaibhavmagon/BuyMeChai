@@ -223,7 +223,11 @@
        if("nm" in urlParams){
            text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'') + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'')
            document.getElementById("name").innerHTML = urlParams["nm"];
-           document.getElementById("amt").innerHTML = " of ₹ " + urlParams["amt"]
+           if("amt" in urlParams){
+               document.getElementById("amt").innerHTML = " of ₹ " + urlParams["amt"]
+           }else{
+               document.getElementById("amt").innerHTML = "";
+           }
        }else{
            document.getElementById("name").innerHTML = "me";
            document.getElementById("amt").innerHTML = "";
