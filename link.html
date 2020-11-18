@@ -143,7 +143,7 @@
                 <p class="tagline">Help creators by sponsoring a cup of tea.</p>
             </div>
             <div class="row qrM">
-                <h2 class="ty">🥳 Thank you for buying <i id="name"></i> chai! ❤️</h2>
+                <h2 class="ty">🥳 Thank you for buying <i id="name"></i> chai<i id="amt"></i> ❤️</h2>
                 <p><!--<i class="supportTag">#SupportCreatorsViaBMC</i>--></p>
             </div>
             <div class="row qrBoxOuter">
@@ -219,12 +219,16 @@
        }
 
        let text = "pay?pa=" + urlParams["vpa"] + "&mode=00&orgid=000000&cu=INR"
+
        if("nm" in urlParams){
            text = text + "&pn=" + (urlParams["nm"]).replace(/ /g,'') + "&tn=Buying%20chai%20for%20" + (urlParams["nm"]).replace(/ /g,'')
            document.getElementById("name").innerHTML = urlParams["nm"];
+           document.getElementById("amt").innerHTML = " of ₹ " + urlParams["amt"]
        }else{
            document.getElementById("name").innerHTML = "me";
+           document.getElementById("amt").innerHTML = "";
        }
+
        if("amt" in urlParams){
            text = text + "&am=" + urlParams["amt"]
        }
