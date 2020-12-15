@@ -8,7 +8,7 @@ Buy me chai gives an opportunity to have a sponsor me page for creators that can
 
 It's an <b>India first product</b> 🇮🇳 and is built on the backbone of <b>UPI payments</b> and thus requires No Integration. Also, since we are creator-first this is absolutely Commission Free (quite literally) 🤘
 
-Buy me chai is a Not for Profit Initiative to help creators get support for their creative projects!
+Buy me chai is a **Not for Profit, Weekend Initiative** to help creators get support for their creative projects!
 
 <br/>
 
