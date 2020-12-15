@@ -1,4 +1,4 @@
-# Buy me chai
+# Buy me chai ☕
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
