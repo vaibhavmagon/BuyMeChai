@@ -12,6 +12,18 @@ Buy me chai is a Not for Profit Initiative to help creators get support for thei
 
 <br/>
 
+## Trends
+
+Happy to share we were Tredning on Oct 28th, 2020 on Betalist: https://betalist.com/startups/buymechai
+
+<img src="https://i.ibb.co/f8HFqQN/Screenshot-2020-12-15-at-8-10-25-PM.png"/>
+
+## Worldwide Reach
+
+<img src="https://i.ibb.co/VvzZ98K/Reach.png"/>
+
+<br/>
+
 ## How does it work?
 1. Making your very own badge and creator page takes less than 10 seconds. Just Click Here and fill in the details. We literally ask for creator's name, the sponsorship amount and the UPI Id and you're set!
 
@@ -44,11 +56,6 @@ Check it out on a blog here: <a href="https://medium.com/@vaibhav210991/host-a-p
 
 <br/>
 
-## Worldwide Reach
-
-<img src="https://i.ibb.co/VvzZ98K/Reach.png"/>
-
-<br/>
 
 ## How to get the Buy me chai logo?
 Oh! The url is right here: https://i.ibb.co/Xkdj83y/image-2.png
