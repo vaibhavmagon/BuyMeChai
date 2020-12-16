@@ -14,7 +14,7 @@ Buy me chai is a **Not for Profit, Weekend Initiative** to help creators get sup
 
 ## Trends
 
-Top idea featured on Oct 28th, 2020 on Betalist: https://betalist.com/startups/buymechai
+Featured on Oct 28th, 2020 at Betalist: https://betalist.com/startups/buymechai
 
 <img src="https://i.ibb.co/f8HFqQN/Screenshot-2020-12-15-at-8-10-25-PM.png"/>
 
